@@ -38,9 +38,9 @@ void uploadData(int pot){
     
     HTTPClient http;    //Declare object of class HTTPClient
     
-    http.begin("http://secret-dawn-82888.herokuapp.com/weathers");      //Specify request destination
+    http.begin("http://fast-everglades-80504.herokuapp.com/weathers");      //Specify request destination
     http.addHeader("Content-Type", "application/json");  //Specify content-type header
-    http.addHeader("x-auth", "YOUR_TOKEN_HERE");  //Specify content-type header
+    http.addHeader("x-auth", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1OThjNDM5MjVkNDJjNzAwMTFmZTMxMzkiLCJpYXQiOjE1MDIzNjQ1NjJ9.LdB9PDnYVl2nmj3FrpXIbA93d89B3xPWmH-t4G3Vitk");  //Specify content-type header
 
     String body = "{\"temperature\": " + String(pot) + ", \"humidity\": " + String(pot) + ", \"information\": \"Test dari NodeMCU\"}";
     
